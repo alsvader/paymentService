@@ -1,0 +1,54 @@
+.mainContainer {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	margin-top: 50px;
+	line-height: 30px;
+}
+
+.mainContainer section {
+	margin: 0 auto;
+	width: 95%;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+ol {
+	margin-bottom: 40px;
+}
+
+.email {
+	color: #0d6efd;
+	font-weight: 900;
+}
+
+.comments {
+	margin: 20px 0px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.mainContainer section {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.mainContainer section {
+		width: 70%;
+	}
+
+	.buttonContainer {
+		margin: 0 auto;
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.mainContainer section {
+		width: 65%;
+	}
+}

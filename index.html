@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Realizar Pago de Servicio</title>
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<main class="container mainContainer">
+			<section>
+				<h1>Pago de Servicio</h1>
+				<h4>Detalle del servicio</h4>
+				<p>
+					Pago de servicio del desarrollo de la aplicación
+					<strong>AppCompañarte</strong>. Puede realizar la descarga de la
+					aplicación ingresando a
+					<a
+						href="https://expo.dev/accounts/alsvader/projects/app-companarte/builds/3893401c-91b6-4720-8dc5-5063023874e5"
+						>este enlace.</a
+					>
+				</p>
+
+				<p><strong>Instrucciones para realizar su pago:</strong></p>
+
+				<ol>
+					<li>
+						Seleccione una de las opciones de pago (Paypal, mercado pago,
+						tarjeta de crédito/débito).
+					</li>
+					<li>Ingrese la información requerida.</li>
+					<li>Confirme su pago.</li>
+					<li>
+						Al finalizar el proceso de pago, le aparecerá un mensaje de
+						confirmación: <strong>"¡Gracias por su pago!"</strong>. Favor de
+						tomar una captura de pantalla y enviarla al siguiente correo
+						electrónico: <span class="email">aaronlopezsosa@gmail.com</span>
+					</li>
+				</ol>
+
+				<div id="smart-button-container" class="buttonContainer">
+					<div style="text-align: center">
+						<div id="paypal-button-container"></div>
+					</div>
+				</div>
+
+				<h6 class="comments">
+					*Dudas y/o aclaraciones, comunicarse al correo electrónico:
+					<span class="email">aaronlopezsosa@gmail.com</span>
+				</h6>
+			</section>
+		</main>
+
+		<script
+			src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
+			data-sdk-integration-source="button-factory"
+		></script>
+		<script src="./checkout.js"></script>
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
